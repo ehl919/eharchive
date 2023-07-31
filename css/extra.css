@@ -1,0 +1,79 @@
+.about {
+    height: 100vh;
+    width: auto;
+    display: flex;
+}
+
+.about .aboutwords {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    width: 100%;
+    justify-content: center;
+}
+
+.about img {
+    object-fit: cover;
+    align-items: center;
+    margin: 10%;
+ }
+
+.contact {
+    height: 100vh;
+    display: flex;
+}
+
+.contact img {
+    object-fit: cover;
+    height: 80%;
+    width: 50%;
+    margin: 10%;
+}
+
+.contact .words {
+    margin-top: 10%;
+    
+}
+
+.contact .words .lines {
+    padding-top: 15px;
+}
+/* Form */
+form {
+    padding-top: 30px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input,
+textarea {
+    border-radius: 0;
+    padding: 15px 0 10px;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid beige;
+    background-color: transparent;
+    margin-bottom: 20px;
+    color: white;
+}
+
+input:focus,
+textarea:focus {
+
+    border-bottom: 1px solid;
+    background-color: transparent;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    border: 0;
+    text-transform: uppercase;
+    color: white;
+    padding-right: 5%;
+}
+
+.response {
+    margin: 5%;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ee Hern's Archive</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <script defer src="js/slider.js"></script>
+    <script defer src="js/fade.js"></script>
+</head>
+
+<body>
+    <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="text hidden">
+        <h1>
+            The Places I've Been To
+        </h1>
+    </div>
+
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+        <a href="bali.html">
+            <img class="image" src="images/CIMG08872.JPG" draggable="false" />
+        </a>
+
+        <a href="brisbane.html">
+            <img class="image" src="images/IMG_0757.JPG" draggable="false" />
+
+        </a>
+        <a href="hk.html">
+            <img class="image" src="images/IMG_8391.JPG" draggable="false" />
+        </a>
+
+        <a href="beijing.html">
+            <img class="image" src="images/IMG_8127.JPG" draggable="false" />
+        </a>
+
+        <a href="tokyo.html">
+            <img class="image" src="images/Japan/IMG_8777.JPG" draggable="false" />
+        </a>
+
+        <a href="geneva.html">
+            <img class="image" src="images/jetdeau.jpg" draggable="false" />
+        </a>
+
+        <a href="seoul.html">
+            <img class="image" src="images/IMG-20230422-WA0004.jpg" draggable="false" />
+        </a>
+
+        <script>
+            $('a').mousedown(function (e) {
+                e.preventDefault();
+            });
+        </script>
+
+    </div>
+
+
+
+</body>
+
+
+</html>

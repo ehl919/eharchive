@@ -1,0 +1,153 @@
+body {
+   overflow-x: hidden;
+}
+
+.container {
+   margin: 0;
+   padding: 0;
+}
+
+.hidden {
+   position: relative;
+   z-index: 1;
+}
+
+.hidden .background {
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   z-index: 0;
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: cover;
+   filter: brightness(0.6);
+}
+
+.hidden .title {
+   position: absolute;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   z-index: 1;
+   text-shadow: 2px 5px 7px black;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+.content {
+   height: 100vh;
+   width: auto;
+   display: flex;
+   margin: 0 auto;
+}
+
+.content img {
+   object-fit: cover;
+   height: 70%;
+   width: 70%;
+   align-items: center;
+   margin: auto;
+   padding-left: 5%;
+   padding-right: 5%;
+}
+
+.content p {
+   display: flex;
+   margin: 10px 20px;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.topdown {
+   flex-direction: column;
+}
+
+.topdown img{
+   display: flex;
+   object-fit: cover;
+   margin: 10%;
+   height: 45%;
+   width: auto;
+}
+
+.left-arrow, .right-arrow {
+   height: 0;
+   line-height: 0;
+   min-height: 0;
+}
+
+.left-arrow::after {
+   content: "\2039";
+   color: white;
+   font-size: 70px;
+   top: 0;
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   left: 10%;
+   top: 50%;
+   line-height: 0;
+   transition: transform 0.2s ease;
+}
+
+.right-arrow::after {
+   content: "\203A";
+   color: white;
+   font-size: 70px;
+   top: 0;
+   position: absolute;
+   z-index: 2;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+   right: 10%;
+   top: 50%;
+   line-height: 0;
+   transition: transform 0.2s ease;
+}
+
+.left-arrow:hover::after, 
+.right-arrow:hover::after {
+   transform: scale(1.2);
+}
+
+a {
+   width: auto;
+   display: block;
+}
+
+.stagger {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.stagger img {
+   margin: 0;
+   padding: 10px;
+   width: 100%;
+   height: 45%;
+}
+
+.stagger:nth-child(2) {
+   transition-delay: 200ms;
+}
+
+.stagger:nth-child(3) {
+   transition-delay: 400ms;
+}
+
+.stagger:nth-child(4) {
+   transition-delay: 600ms;
+}
+
+.stagger:nth-child(5) {
+   transition-delay: 800ms;
+}

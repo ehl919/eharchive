@@ -1,0 +1,11 @@
+.slide-left {
+    position: absolute;
+    top: 70%;
+    left: 46%;
+ }
+
+ .slide-left ul li {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 300ms linear, opacity 500ms linear;
+ }
